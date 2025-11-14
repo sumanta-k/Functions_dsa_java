@@ -2,8 +2,11 @@ import java.util.Scanner;
 public class Sum {
     public static void main(String[] args) {
 //        sum();
-        int sumAns = sum2();
-        System.out.println("The sum is "+ sumAns);
+//        int sumAns = sum2();
+//        System.out.println("The sum is "+ sumAns);
+       int sum3Ans = sum3(10,20);
+       System.out.println("The sum of a,b is "+ sum3Ans);
+
     }
 
    static  void sum(){
@@ -29,5 +32,10 @@ public class Sum {
         int sum = num1 + num2;
 
         return sum;
+    }
+
+    static int sum3(int a, int b){
+       int sum = a + b;
+       return sum;
     }
 }
