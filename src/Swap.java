@@ -18,8 +18,9 @@ public class Swap {
     static void swap(int a, int b){
         int temp;
         temp = a;
-        a = b;
-        b = temp;
+        a = b; /* a == b's value internally */
+        b = temp; /* b == a's value internall */
+        /* but they are only pass value not the references */
     }
 
     static void changeName(String name){
