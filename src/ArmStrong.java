@@ -2,14 +2,15 @@ import java.util.Scanner;
 
 public class ArmStrong {
     public static void main(String[] args) {
-        boolean ans = isArmStrong();
-        System.out.println(ans);
+
+        for (int i = 100; i < 1000; i++){
+           if (isArmStrong(i)){
+               System.out.println(i + " ");
+            };
+        }
     }
 
-    static boolean isArmStrong() {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter a number for armstrong ");
-        int num = in.nextInt();
+    static boolean isArmStrong(int num) {
         int oldNum = num;
         int sum = 0;
         while (num > 0) {
@@ -18,7 +19,6 @@ public class ArmStrong {
             sum += cube;
             num /= 10;
         }
-        System.out.println(sum);
         return sum == oldNum;
     }
 
